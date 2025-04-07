@@ -1,0 +1,18 @@
+ # Ignore build artifacts
+build/
+cmake-build-debug/
+*.o
+*.so
+*.exe
+*.out
+*.a
+*.log
+./Qt6.2.4.1
+
+# Ignore generated CMake files
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+Testing/
+
