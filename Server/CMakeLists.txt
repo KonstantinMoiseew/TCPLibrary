@@ -8,7 +8,12 @@ set(CMAKE_LINK_DEPENDS_NO_SHARED ON)
 set(CMAKE_LINK_WHAT_YOU_USE ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON) #generates a compile_commands.json
 
-set(CMAKE_PREFIX_PATH "/home/const/QtBuiltLibrary/Qt6/Qt6.2.4.1")
+set(CMAKE_PREFIX_PATH "../Qt6.2.4.1")
+
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
+find_package(QT NAMES Qt6 REQUIRED COMPONENTS Core)
 
 set(this_target "TCPServer")
 set(CMAKE_BUILD_TYPE Debug CACHE STRING "Build type")
@@ -49,7 +54,7 @@ target_include_directories(${this_target} PRIVATE
 
 
 target_link_libraries(${this_target} PRIVATE
-
+  Qt6::Core
 
 )
 

@@ -7,7 +7,7 @@ cmake-build-debug/
 *.out
 *.a
 *.log
-./Qt6.2.4.1
+Qt6.2.4.1
 
 # Ignore generated CMake files
 CMakeFiles/
